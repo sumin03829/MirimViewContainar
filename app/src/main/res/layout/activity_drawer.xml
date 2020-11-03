@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:background="#FFA5A5"
+        android:text="서랍장 위에 있는 위젯입니다."/>
+
+    <SlidingDrawer
+        android:handle="@id/btn_handle"
+        android:content="@id/linear_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#7C7C7C"
+            android:text="손잡이"/>
+        <LinearLayout
+            android:id="@+id/linear_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CDDC39"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="서랍장 안의 위젯입니다."/>
+
+
+        </LinearLayout>
+    </SlidingDrawer>
+
+
+</LinearLayout>
